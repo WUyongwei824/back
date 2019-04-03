@@ -1,0 +1,13 @@
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.150.110:3306/db1?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 8
+mybatis:
+  type-aliases-package: com.neuedu.pojo
